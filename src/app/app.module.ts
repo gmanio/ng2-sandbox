@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { PopupService } from "./services/popup.service";
 import { PopupComponent } from './components/popup/popup.component';
+import { RootRouter } from "./app.route";
+import { BoardModule } from "./modules/board/board.module";
 
 @NgModule({
   declarations: [
@@ -15,13 +17,16 @@ import { PopupComponent } from './components/popup/popup.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RootRouter,
+    BoardModule
   ],
   providers: [
     PopupService
   ],
   entryComponents: [
-    PopupComponent],
+    PopupComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
