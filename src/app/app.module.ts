@@ -20,6 +20,8 @@ import { PopupComponent } from './components/popup/popup.component';
   providers: [
     PopupService
   ],
+  entryComponents: [
+    PopupComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {
