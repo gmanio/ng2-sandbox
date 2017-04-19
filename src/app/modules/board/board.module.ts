@@ -11,10 +11,7 @@ import { CommonModule } from "@angular/common";
   ],
   exports: [],
   declarations: [BoardComponent],
-  providers: [],
-  entryComponents: [
-    PopupComponent
-  ],
+  providers: []
 })
 export class BoardModule {
 }
