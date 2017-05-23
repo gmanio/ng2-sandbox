@@ -8,11 +8,13 @@ import { PopupService } from "./services/popup.service";
 import { PopupComponent } from './components/popup/popup.component';
 import { RootRouter } from "./app.route";
 import { BoardModule } from "./modules/board/board.module";
+import { SwiperComponent } from './components/swiper/swiper.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PopupComponent
+    PopupComponent,
+    SwiperComponent
   ],
   imports: [
     BrowserModule,
