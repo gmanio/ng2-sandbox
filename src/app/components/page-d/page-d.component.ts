@@ -5,16 +5,9 @@ import { Router } from "@angular/router";
 @Component({
   selector: 'app-page-d',
   templateUrl: './page-d.component.html',
-  styleUrls: ['./page-d.component.css'],
-  animations: [routerAnimation],
-  host: { '[@routerAnimation]': '' }
+  styleUrls: ['./page-d.component.css']
 })
 export class PageDContainerComponent implements OnInit {
-
-  @HostListener('document:click', ['$event'])
-  handleKeyboardEvent(kbdEvent: KeyboardEvent) {
-    this.router.navigate(['a']);
-  }
 
   constructor(private router: Router) { }
 
