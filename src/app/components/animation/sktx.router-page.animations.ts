@@ -18,3 +18,10 @@ export const routerAnimation =
       animate('1s linear', style({ transform: 'translateX(-100%)' }))
     ])
   ]);
+
+export const leaveAnimation = trigger('leaveAnimation', [
+  transition(':leave', [
+    style({ position: 'fixed', width: '100%', height: '100%' }),
+    animate('1s linear', style({ transform: 'translateX(-100%)' }))
+  ])
+]);
